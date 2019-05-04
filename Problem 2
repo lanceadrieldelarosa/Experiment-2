@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+   int bal;
+   double gall;
+   
+   cout<<"Amount Consumed)? "<<endl;
+   cin>> gall;
+   cout<<"Enter amount to pay"<<endl;
+   cin>> bal;
+   
+   if (bal==0)
+   cout<<"Total Bill:" << (35 + (gall*1.10));
+   else
+   cout<< "Total Bill" << (55 + (gall*1.10));
+   
+   return 0;
+}
