@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+   int num1;
+   int sum;
+   
+   
+   cout <<"Enter a Value";
+   cin >> num1;
+ 
+  while (num1 > 0)
+  {
+  sum = 0;
+    for(int i=1; i<=num1; i++) {
+sum=sum+i;}
+   cout << "The sum of all whole values starting from 1 to " << num1 << " is " << sum << endl;
+   
+cout<<"Enter a Value: ";
+cin>> num1;
+}
+cout<< "🙂";
+   return 0;
+   
+}
