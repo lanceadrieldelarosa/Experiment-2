@@ -1,0 +1,39 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+   int package;
+int duration;
+
+           cout<<"Package A: 995 Pesos for 10 hours. 20 pesos for every succeeding hour."<<endl;
+                        cout<<"Package B: 1495 Pesos for 20 hours. 10 Pesos for every succeeding hour."<<endl;
+                        cout<<"Package C: 1995 Pesos for unlimited access."<<endl;
+                         cout<<endl;
+ 
+
+                        cout<<"Package Chosen "<<endl;
+cin>>package;
+cout<<"Length of usage"<<endl;
+cin>>duration;
+
+switch(package)
+{
+   case 1:
+   if (duration>0 && duration<=10)
+   cout<< "Package A: 995 Pesos";
+   else if (duration>10)
+   cout<< "Package A:" << (((duration-10)*20) + 995) << " Amount to pay";
+   break;
+   
+   case 2:
+   if (duration>0 && duration<=20)
+   cout<< "Package B: 1495 Pesos";
+   else if (duration>20)
+cout<< "Package B: Php " << (((duration-20)*10) + 1495) << "Amount to pay";
+   break;
+   
+   case 3:
+   cout<<"Package C: 1995 Pesos";
+}
+   return 0;
+}
